@@ -6,16 +6,12 @@ To view the website, simply open the index.html file in your web browser of choi
 
 Features
 Home page with background information about Yanni
-Biography page with a timeline of Yanni's life
-Discography page with a list of Yanni's albums
-Concerts page with information about Yanni's upcoming concerts
+Biography page, Photos, Album...
 Contact page with a form for fans to send messages to Yanni
 Contributing
 If you would like to contribute to the website, please fork the repository and submit a pull request with your changes.
 
 Credits
-The Yanni biography and discography information was sourced from yanni.com
-The website design was inspired by https://www.johnlegend.com/
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+The Yanni biography and discography information was sourced from chatGPT
+The website design was inspired by chatGPT
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10621661&assignment_repo_type=AssignmentRepo)
