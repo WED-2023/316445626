@@ -2,7 +2,8 @@ Yanni Fan Website
 This project is a website about the musician Yanni, built using HTML, CSS, and JavaScript. The website includes information about Yanni's life, music ...
 
 Getting Started
-To view the website, simply open the index.html file in your web browser of choice. Alternatively, you can visit the live version of the site at https://example.com/yanni-fan-site.
+To view the website, simply open the index.html file in your web browser of choice. Alternatively, you can visit the live version of the site at 
+https://web-development-environments-2023.github.io/316445626/.
 
 Features
 Home page with background information about Yanni
