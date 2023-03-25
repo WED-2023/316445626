@@ -140,40 +140,43 @@ Welcome to the "My Playlist" Section!
 <h2>contact me</h2>
 <br/>
 <br/>
-If you want to write to me you can send me an Email!
+<p>If you would like to get in touch, please send me an email:</p>
+<a href="mailto:awaisya@post.bgu.ac.il">awaisya@post.bgu.ac.il</a>
 <br/><br/><br/>
-
-<form action="mailto:awaisya@post.bgu.ac.il" method="GET" enctype="text/plain">
-  <label for="msubject">Subject: </label>
-  <input name="subject" placeholder="please write subject of the email" type="text" size="80"/>
-  <br/>  <br/>  <br/>
-  <label for="mcontent">Content: </label>
-  <textarea name="body" id="body" placeholder="please write content of the email" rows="10" cols="50"></textarea>
-  <br/><br/>
-
-  <label for="memoji">choose emoji: </label>
-  <select name="emoji" id="emoji" onchange="myFunction()">
-    <option value=Emoji>Emoji</option>
-    <option value="&#128514">&#128514</option>
-    <option value="&#128523">&#128523</option>
-    <option value="&#128525">&#128525</option>
-    <option value="&#128564">&#128564</option>
-    <option value="&#128151">&#128151</option>
-    <option value="&#128076">&#128076</option>
-    <option value="&#128545">&#128545</option>
-    <option value="&#128546">&#128546</option>
+<form action="mailto:awaisya@post.bgu.ac.il" method="POST" enctype="text/plain">
+  <label for="subject">Subject:</label>
+  <input id="subject" name="subject" placeholder="Enter email subject" type="text" size="80" required>
+  <br><br>
+  
+  <label for="content">Content:</label>
+  <textarea id="content" name="body" placeholder="Enter email content" rows="10" cols="50"></textarea>
+  <br><br>
+  
+  <label for="emoji">Choose emoji:</label>
+  <select id="emoji" name="emoji">
+    <option value="" disabled selected hidden>Emoji</option>
+    <option value="&#128514">😂</option>
+    <option value="&#128523">😋</option>
+    <option value="&#128525">😍</option>
+    <option value="&#128564">🤔</option>
+    <option value="&#128151">💇</option>
+    <option value="&#128076">👼</option>
+    <option value="&#128545">🙁</option>
+    <option value="&#128546">🙂</option>
   </select>
-
+  
+  <button type="button" onclick="addEmojiToContent()">Add Emoji</button>
+  
   <script>
-    function myFunction() {
-      const textarea = document.getElementById('body');
-      if (document.getElementById('emoji').value != 'Emoji') {
-        textarea.value += document.getElementById('emoji').value;
-      }
+    function addEmojiToContent() {
+      const content = document.getElementById('content');
+      const emoji = document.getElementById('emoji').value;
       
+      if (emoji) {
+        content.value += emoji;
+      }
     }
   </script>
-
   <br/>
   <br/>
   <input type="submit" value="Send" />
